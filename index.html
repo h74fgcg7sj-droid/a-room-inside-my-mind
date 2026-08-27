@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Room Inside My Mind</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- WELCOME SCREEN -->
+    <section id="welcome-screen">
+
+        <div class="floating-symbols">
+            ✦ &nbsp; ✧ &nbsp; ☾ &nbsp; ✦ &nbsp; ☁ &nbsp; ✧
+        </div>
+
+        <div class="welcome-content">
+
+            <p class="tiny-title">AN INTERACTIVE STORY</p>
+
+            <h1>
+                A Room
+                <span>Inside My Mind</span>
+            </h1>
+
+            <p class="intro">
+                Everything here belongs to a memory.<br>
+                Some memories are easier to find than others.
+            </p>
+
+            <button id="enter-btn">
+                Enter the Room ✦
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN ROOM -->
+    <main id="room-page" class="hidden">
+
+        <header class="room-header">
+
+            <div class="site-title">
+                ✦ A Room Inside My Mind
+            </div>
+
+            <button id="theme-btn" type="button">
+                ☀
+            </button>
+
+        </header>
+
+
+        <section class="room" id="room">
+
+            <!-- WINDOW -->
+            <div
+                class="object window-object"
+                data-title="The Window"
+                data-text="Outside is always changing. Sometimes I watch the rain and imagine another version of myself living somewhere else.">
+
+                <div class="window">
+                    <div class="sky"></div>
+
+                    <div class="sun">☀</div>
+                    <div class="moon">☾</div>
+
+                    <div class="window-frame vertical-frame"></div>
+                    <div class="window-frame horizontal-frame"></div>
+                </div>
+
+                <span class="label">the window</span>
+            </div>
+
+
+            <!-- PICTURE -->
+            <div
+                class="object picture-object"
+                data-title="A Summer Somewhere"
+                data-text="A moment that looked ordinary when it happened, but somehow became one of the memories I return to most.">
+
+                <div class="picture">
+                    <div class="picture-sun"></div>
+                    <div class="hill hill-one"></div>
+                    <div class="hill hill-two"></div>
+                </div>
+
+                <span class="label">summer, somewhere</span>
+            </div>
+
+
+            <!-- RADIO -->
+            <div
+                class="object radio-object"
+                data-title="The Radio"
+                data-text="Some songs are not just songs. They become entire rooms, entire years, entire versions of you.">
+
+                <div class="radio">
+
+                    <div class="speaker"></div>
+
+                    <div class="radio-screen">
+                        87.5
+                    </div>
+
+                    <div class="speaker"></div>
+
+                    <div class="radio-knob"></div>
+
+                </div>
+
+                <span class="label">favorite frequencies</span>
+            </div>
+
+
+            <!-- BOOKS -->
+            <div
+                class="object books-object"
+                data-title="The Books"
+                data-text="Stories I loved, stories I never finished, and stories that quietly changed the way I see the world.">
+
+                <div class="books">
+
+                    <div class="book book-one"></div>
+                    <div class="book book-two"></div>
+                    <div class="book book-three"></div>
+                    <div class="book book-four"></div>
+                    <div class="book book-five"></div>
+
+                </div>
+
+                <span class="label">unfinished stories</span>
+            </div>
+
+
+            <!-- PLANT -->
+            <div
+                class="object plant-object"
+                data-title="The Plant"
+                data-text="It grows slowly. Maybe that is the point. Not everything beautiful has to happen quickly.">
+
+                <div class="plant">
+
+                    <div class="leaf leaf-one"></div>
+                    <div class="leaf leaf-two"></div>
+                    <div class="leaf leaf-three"></div>
+                    <div class="leaf leaf-four"></div>
+
+                    <div class="pot"></div>
+
+                </div>
+
+                <span class="label">still growing</span>
+            </div>
+
+
+            <!-- LETTERS -->
+            <div
+                class="object letters-object"
+                data-title="Letters Never Sent"
+                data-text="Some things were too difficult to say aloud, so I wrote them down. Most of them are still here.">
+
+                <div class="letters">
+
+                    <div class="letter-back"></div>
+
+                    <div class="letter-front">
+                        ♡
+                    </div>
+
+                </div>
+
+                <span class="label">letters never sent</span>
+            </div>
+
+
+            <!-- SECRET DRAWER -->
+            <div
+                class="object drawer-object"
+                data-title="A Secret Drawer"
+                data-text="You found it. Some memories only reveal themselves when you are curious enough to look for them. ✦">
+
+                <div class="drawer">
+
+                    <div class="drawer-handle"></div>
+
+                </div>
+
+                <span class="label">do not open</span>
+            </div>
+
+
+            <!-- BED -->
+            <div class="bed-object">
+
+                <div class="bed-head"></div>
+
+                <div class="bed">
+
+                    <div class="pillow"></div>
+
+                    <div class="blanket"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MEMORY POPUP -->
+    <div id="memory-modal" class="modal hidden">
+
+        <div class="modal-box">
+
+            <button
+                id="close-modal"
+                type="button">
+                ×
+            </button>
+
+            <p class="modal-small">
+                A MEMORY
+            </p>
+
+            <h2 id="memory-title">
+                A Memory
+            </h2>
+
+            <p id="memory-text">
+                Every object holds a story.
+            </p>
+
+            <p class="modal-star">
+                ✦
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
